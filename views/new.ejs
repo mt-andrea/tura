@@ -1,0 +1,22 @@
+<%- include("partials/header") %>
+<h1><%= title %></h1>
+<p> <%= content %> </p>
+<form action="/new" method="post" >
+    <div class="row g-3">
+    <div class="col-md-3">
+<label for="datum" class="form-label">Dátum</label>
+<input type="date" name="datum" id="datum"  class="form-control">
+</div>
+<div class="col-md-6">
+<label for="hely" class="form-label">Hely</label>
+<input type="text" name="hely" id="hely" class="form-control" >
+</div>
+<div class="col-md-3">
+    <label for="tav" class="form-label">Táv (km)</label>
+    <input type="number" name="tav" id="tav" step="0.1"  class="form-control">
+</div>
+</div>
+<button type="submit" class="btn btn-primary mt-3 ">Hozzáad</button>
+</form>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,25 @@
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    background-color: black;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+.nav-link{
+    color:white;
+}
+#wrap{
+ margin: 10vw;
+}
+.footer{
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}

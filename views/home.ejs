@@ -1,0 +1,22 @@
+<%- include("partials/header") %>
+<h1><%= title %></h1>
+<p> <%= content %><%= ossz%> </p>
+<table class="table table-striped">
+        <tr>
+            <th>Dátum</th>
+            <th>Hely</th>
+            <th>Táv</th>
+            <th></th>
+        </tr>
+
+<% items.forEach(item => {%>
+    <tr>
+       <td><%= item.datum%></td>
+       <td><%= item.hely%></td>
+       <td><%= item.tav%></td>
+       <td><a href="/delete/<%= item.id %> ">Törlés</a></td>
+   </tr> 
+<%}); %>
+
+</table>
+<%- include("partials/footer") %>
